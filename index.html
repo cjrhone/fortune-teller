@@ -14,42 +14,47 @@
       </div>
       <h3>Answer these mystical questions to reveal your fortune: <hr></h3>
       <form id="fortuneQuiz">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group" id="badQuestions">
-            <p>which of these bad luck events apply to you?  <em>Check all that apply</em></p>
-            <input type="checkbox" name="bad-luck" value="-1"> saw a black cat<br>
-            <input type="checkbox" name="bad-luck" value="-1"> Walked under a ladder<br>
-            <input type="checkbox" name="bad-luck" value="-1"> Broke a mirror<br>
-            <input type="checkbox" name="bad-luck" value="-1"> Spilled salt<br>
-            <input type="checkbox" name="bad-luck" value="-1"> Failed to respond to a chain letter<br>
-            <input type="checkbox" name="bad-luck" value="-1"> Put shoes on the table<br>
-            <input type="checkbox" name="bad-luck" value="-1"> Said the word Macbeth in a theater<br>
-            </div>
-          </div>
+        <div class="row">
           <div class="col-md-6">
             <div class="form-group" id="badQuestions">
-              <p>which of these good luck events apply to you?  <em>Check all that apply</em></p>
-              <input type="checkbox" name="good-luck" value="1"> Found a 4 leaf clover<br>
-              <input type="checkbox" name="good-luck" value="1"> Saw a rainbow<br>
-              <input type="checkbox" name="good-luck" value="1"> Lady bug landed on you<br>
-              <input type="checkbox" name="good-luck" value="1"> Found a penny<br>
-              <input type="checkbox" name="good-luck" value="1"> Owned a dream-catcher<br>
-              <input type="checkbox" name="good-luck" value="1"> Carried a rabbit foot<br>
+              <p>which of these bad luck events apply to you?  <em>Check all that apply</em></p>
+              <input type="checkbox" name="bad-luck" value="-1"> saw a black cat<br>
+              <input type="checkbox" name="bad-luck" value="-1"> Walked under a ladder<br>
+              <input type="checkbox" name="bad-luck" value="-1"> Broke a mirror<br>
+              <input type="checkbox" name="bad-luck" value="-1"> Spilled salt<br>
+              <input type="checkbox" name="bad-luck" value="-1"> Failed to respond to a chain letter<br>
+              <input type="checkbox" name="bad-luck" value="-1"> Put shoes on the table<br>
+              <input type="checkbox" name="bad-luck" value="-1"> Said the word Macbeth in a theater<br>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group" id="goodQuestions">
+                <p>which of these good luck events apply to you?  <em>Check all that apply</em></p>
+                <input type="checkbox" name="good-luck" value="1"> Found a 4 leaf clover<br>
+                <input type="checkbox" name="good-luck" value="1"> Saw a rainbow<br>
+                <input type="checkbox" name="good-luck" value="1"> Lady bug landed on you<br>
+                <input type="checkbox" name="good-luck" value="1"> Found a penny<br>
+                <input type="checkbox" name="good-luck" value="1"> Owned a dream-catcher<br>
+                <input type="checkbox" name="good-luck" value="1"> Carried a rabbit foot<br>
+                <input type="checkbox" name="good-luck" value="1"> Did something nice for someone else<br>
+              </div>
             </div>
           </div>
-        </div>
+        <button id="submitButton" type="submit" class="btn-btn-success" name="button">Seek your fortune!</button>
       </form>
-
-      <button type="submit" class="btn-btn-success" name="button">Seek your fortune!</button>
-
-        <div class="goodResult">
+        <div id="goodResult" class="result">
           <h2>You are lucky</h2>
           <p class ="lead">Luck is on your side!</p>
 
         </div>
 
-        <div class="badResult">
+        <div id="neutralResult" class="result">
+          <h2>You have no luck</h2>
+          <p class ="lead">You are neither lucky nor unlucky.</p>
+
+        </div>
+
+        <div id="badResult" class="result">
           <h2>You are unlucky</h2>
           <p class ="lead">Stay indoors for awhile.</p>
 

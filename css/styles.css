@@ -1,7 +1,11 @@
-.goodResult{
+#goodResult{
   display: none;
 }
 
-.badResult{
+#badResult{
+  display: none;
+}
+
+#neutralResult{
   display: none;
 }
